@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chroma: Personality Test</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styleinfo.css">
+    </head>
+    <body>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar__container">
+              <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>CHROMA PERSONALITY</a>
+              <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+              <ul class="navbar__menu">
+                <li class="navbar__btn">
+                  <a href="/" class="button">Home</a>
+              </li>
+                <li class="navbar__btn">
+                  <a href="Colors.html" class="button">The Colors</a>
+              </li>
+              </ul>
+            </div>
+          </nav>
+      
+        <div class="container">
+            <div class="main-title">
+                <!--<h1>What</h1>
+                <h1>does</h1>
+                <h1>each</h1> 
+                <h1>color</h1> 
+                <h1>mean?</h1>-->
+                <p>What</p> <p>does</p> <p>each</p> <p>color</p> <p>mean?</p>
+            </div>
+
+            <div class="buttons">
+                <button class="tablink" onclick="openPage('blue', this)" id="defaultOpen">Blue</button>
+                <button class="tablink" onclick="openPage('green', this)">Green</button>
+                <button class="tablink" onclick="openPage('gold', this)">Gold</button>
+                <button class="tablink" onclick="openPage('orange', this)">Orange</button>
+            </div>
+
+
+            <div class="color-container tab-content" id="blue">
+                <h3 id="blue-color">B L U E</h3>
+                <img id="heart" src="images/heart.png">
+                <p> 
+                    Someone who is enthusiastic and passionate about their interests and are able to communicate their ideas clearly and effectively to others.
+                    This person embodies many positive traits that make them a joy to be around and a valuable member of any community.
+                </p>
+            </div>
+
+            <div class="color-container tab-content" id="green">
+                <h3 id="green-color">G R E E N</h3>
+                <img id="lamp" src="images/lamp.png">
+                <p>
+                    Someone who can be characterized as having a sharp, analytical mind with a global perspective,
+                    a skilled problem solver with a creative approach to abstract and complex concepts.
+                </p>
+            </div>
+
+            <div class="color-container tab-content" id="gold">
+                <h3 id="yellow-color">G O L D</h3>
+                <img id="tree" src="images/tree.png">
+                <p>
+                    Someone who is dependable, prepared, and highly organized, and who values their relationships with others.
+                    Someone thorough and sensible in their approach to tasks, paying close attention to detail and taking a logical and organized approach to their work.
+                </p>
+            </div>
+
+            <div class="color-container tab-content" id="orange">
+                <h3 id="orange-color">O R A N G E</h3>
+                <img id="lightning" src="images/lighting.png">
+                <p>
+                    Someone lively and charismatic, who is quick-witted, charming, and spontaneous. They have a talent for making others laugh and feel at ease, and they enjoy taking risks and living in the moment.
+                </p>
+            </div>
+            <div id="button-div">
+                <br>
+            
+                <!--Change "login.html" to questionaire page-->
+                <button onclick="window.open('index.html')" id="button">Find your color</button>
+
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <!--JS-->
+        <script>
+            function openPage(pageName,elmnt) {
+                var i, tabcontent, button;
+                tabcontent = document.getElementsByClassName("tab-content");
+                button = document.getElementById("button-div");
+                for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                }
+                //tablinks = document.getElementsByClassName("tablink");
+                //for (i = 0; i < tablinks.length; i++) {
+                //tablinks[i].style.backgroundColor = "";
+                //}
+                document.getElementById(pageName).style.display = "block";
+
+                if(pageName == "blue")
+                {
+                    document.getElementById("button-div").style.backgroundColor = "var(--blue)"
+                } else if (pageName == "green")
+                {
+                    document.getElementById("button-div").style.backgroundColor = "var(--green)"
+                } else if (pageName == "gold")
+                {
+                    document.getElementById("button-div").style.backgroundColor = "var(--gold)"
+                } else
+                {
+                    document.getElementById("button-div").style.backgroundColor = "var(--orange)"
+                }
+                
+                
+            }
+            
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+</html>

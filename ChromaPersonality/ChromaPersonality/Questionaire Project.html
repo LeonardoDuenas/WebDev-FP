@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Project Style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chroma Personality</title>
+    <script src ="Java.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+          <a href="index.html" id="navbar__logo"><i class="fas fa-gem"></i>CHROMA PERSONALITY</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__btn">
+              <a href="/" class="button">Home</a>
+          </li>
+            <li class="navbar__btn">
+              <a href="Colors.html" class="button">The Colors</a>
+          </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="form container">
+        <form >
+        <fieldset>
+            <legend><b>Exploring your colors!</b></legend>
+                <h1>1. When I make decisions:</h1>
+                <p>
+                    <h2>a. I do it quickly and go with the first impressions.</h2>
+                    <p>Likely    <input type="radio" onclick="Orange(4)" name="radAnswer1" required ="required"/>
+                        <input type="radio" onclick="Orange(3)" name="radAnswer1" required ="required"/>
+                        <input type="radio" onclick="Orange(2)" name="radAnswer1" required ="required"/> 
+                        <input type="radio" onclick="Orange(1)" name="radAnswer1" required ="required"/>  Unlikely</p>
+                    
+                    <h2>b. I think about it, consider the options and then decide.</h2>
+                        <p>Likely   <input type="radio" onclick="Green(4)" name="radAnswer2" />
+                        <input type="radio" onclick="Green(3)" name="radAnswer2" />
+                        <input type="radio" onclick="Green(2)" name="radAnswer2" /> 
+                        <input type="radio" onclick="Green(1)" name="radAnswer2" />  Unlikely</p>
+                    
+                    <h2>c. I listen to my feelings and consider how my decisions will affect others.</h2>
+                        <p>Likely   <input type="radio" onclick="Blue(4)" name="radAnswer3"/>
+                        <input type="radio" onclick="Blue(3)" name="radAnswer3" />
+                        <input type="radio" onclick="BLue(2)"name="radAnswer3" /> 
+                        <input type="radio" onclick="Blue(1)" name="radAnswer3" />  Unlikely</p>
+                    
+                    <h2>d. I take it seriously and always try to make the right decision.</h2>
+                        <p>Likely   <input type="radio" onclick="Gold(4)" name="radAnswer4" />
+                        <input type="radio" onclick="Gold(3)" name="radAnswer4" />
+                        <input type="radio" onclick="Gold(2)" name="radAnswer4" /> 
+                        <input type="radio" onclick="Gold(1)" name="radAnswer4" />  Unlikely</p>
+                </p>
+                <br></br>    
+            </fieldset>
+            <br></br>
+            <fieldset>
+                <h1>2. The best way for others to show me they care about me is to:</h1>
+                <p>
+                    <h2>a. Do fun things with me.</h2>
+                        <p>Likely   <input type="radio" onclick="Orange(4)" name="radAnswer5"/>
+                        <input type="radio" onclick="Orange(3)" name="radAnswer5" />
+                        <input type="radio" onclick="Orange(2)" name="radAnswer5" /> 
+                        <input type="radio" onclick="Orange(1)" name="radAnswer5" />  Unlikely</p>
+                    
+                    <h2>b. Give me space to be myself.</h2>
+                        <p>Likely   <input type="radio" onclick="Green(4)" name="radAnswer6" />
+                        <input type="radio" onclick="Green(3)" name="radAnswer6" />
+                        <input type="radio" onclick="Green(2)" name="radAnswer6" /> 
+                        <input type="radio" onclick="Green(1)" name="radAnswer6" />  Unlikely</p>
+                    
+                    <h2>c. Spend time with me doing whatever!</h2>
+                        <p>Likely   <input type="radio" onclick="Blue(4)" name="radAnswer7" />
+                        <input type="radio" onclick="Blue(3)" name="radAnswer7" />
+                        <input type="radio" onclick="Blue(2)" name="radAnswer7" /> 
+                        <input type="radio" onclick="Blue(1)" name="radAnswer7" />  Unlikely</p>
+                    
+                    <h2>d. Do what I want to do; not let me down or go back on their word.</h2>
+                        <p>Likely   <input type="radio" onclick="Gold(4)" name="radAnswer8" />
+                        <input type="radio" onclick="Gold(3)" name="radAnswer8" />
+                        <input type="radio" onclick="Gold(2)" name="radAnswer8" /> 
+                        <input type="radio" onclick="Gold(1)" name="radAnswer8" />  Unlikely</p>
+                </p>
+                <br></br>
+            </fieldset>
+            <br></br>
+            <fieldset>
+                <h1>3. When I'm with my friends, I like to provide:</h1>
+                <p id = 3>
+                    <h2>a. The excitement; the fun; the jokes..</h2>
+                        <p>Likely   <input type="radio" onclick="Orange(4)" name="radAnswer9" />
+                        <input type="radio" onclick="Orange(3)" name="radAnswer9" />
+                        <input type="radio" onclick="Orange(2)" name="radAnswer9" /> 
+                        <input type="radio" onclick="Orange(1)" name="radAnswer9" />  Unlikely</p>
+                        
+                    <h2>b. Questions; answers; a logical way of looking at things.</h2>
+                        <p>Likely   <input type="radio" onclick="Green(4)" name="radAnswer10" />
+                        <input type="radio" onclick="Green(3)" name="radAnswer10" />
+                        <input type="radio" onclick="Green(2)" name="radAnswer10" /> 
+                        <input type="radio" onclick="Green(1)" name="radAnswer10" />  Unlikely</p>
+                        
+                    <h2>c. Concern for others; a lot of caring.</h2>
+                        <p>Likely   <input type="radio" onclick="Blue(4)" name="radAnswer11" />
+                        <input type="radio" onclick="Blue(3)" name="radAnswer11"  />
+                        <input type="radio" onclick="Blue(2)" name="radAnswer11"  /> 
+                        <input type="radio" onclick="Blue(1)" name="radAnswer11" />  Unlikely</p>
+                        
+                    <h2>d. The planning; a sense of security; a good standard.</h2>
+                        <p>Likely   <input type="radio" onclick="Gold(4)" name="radAnswer12"  />
+                        <input type="radio" onclick="Gold(3)" name="radAnswer12"  />
+                        <input type="radio" onclick="Gold(2)" name="radAnswer12"  /> 
+                        <input type="radio" onclick="Gold(1)" name="radAnswer12" />  Unlikely</p>
+                </p>
+                <br></br>
+            </fieldset>
+            <br></br>
+            <fieldset>
+                <h1>4. I like to:</h1>
+                <p>
+                    <h2>a. Act on a moment's notice; do risky things.</h2>
+                        <p>Likely   <input type="radio" onclick="Orange(4)" name="radAnswer13"  />
+                        <input type="radio" onclick="Orange(3)" name="radAnswer13"  />
+                        <input type="radio" onclick="Orange(2)" name="radAnswer13"  /> 
+                        <input type="radio" onclick="Orange(1)" name="radAnswer13" />  Unlikely</p>
+                
+                    <h2>b. Provide answers or give thought to people's questions.</h2>
+                        <p>Likely   <input type="radio" onclick="Green(4)" name="radAnswer14"  />
+                        <input type="radio" onclick="Green(3)" name="radAnswer14"  />
+                        <input type="radio" onclick="Green(2)" name="radAnswer14" /> 
+                        <input type="radio" onclick="Green(1)" name="radAnswer14" />  Unlikely</p>
+                
+                    <h2>c. Help maintain a sense of harmony and togetherness.</h2>
+                        <p>Likely   <input type="radio" onclick="Blue(4)" name="radAnswer15"  />
+                        <input type="radio" onclick="Blue(3)" name="radAnswer15"  />
+                        <input type="radio" onclick="Blue(2)" name="radAnswer15"  /> 
+                        <input type="radio" onclick="Blue(1)" name="radAnswer15" />  Unlikely</p>
+                    
+                    <h2>d. Be responsible, dependable, and helpful to others.</h2>
+                        <p>Likely   <input type="radio" onclick="Gold(4)" name="radAnswer16"  />
+                        <input type="radio" onclick="Gold(3)" name="radAnswer16"  />
+                        <input type="radio" onclick="Gold(2)" name="radAnswer16"  /> 
+                        <input type="radio" onclick="Gold(1)" name="radAnswer16" />  Unlikely</p>
+                </p>
+                <br></br>
+            </fieldset>
+            <br></br>
+            <fieldset>
+                <h1>5. One thing I am really good at is:</h1>
+                <p>
+                    <h2>a. Acting courageously.</h2>
+                        <p>Likely   <input type="radio" onclick="Orange(4)" name="radAnswer17"  />
+                        <input type="radio" onclick="Orange(3)" name="radAnswer17"  />
+                        <input type="radio" onclick="Orange(2)" name="radAnswer17"  /> 
+                        <input type="radio" onclick="Orange(1)" name="radAnswer17" />  Unlikely</p>
+                
+                    <h2>b. Thinking</h2>
+                        <p>Likely   <input type="radio" onclick="Green(4)" name="radAnswer18"  />
+                        <input type="radio" onclick="Green(3)" name="radAnswer18"  />
+                        <input type="radio" onclick="Green(2)" name="radAnswer18"  /> 
+                        <input type="radio" onclick="Green(1)" name="radAnswer18" />  Unlikely</p>
+                
+                    <h2>c. Being sensitive.</h2>
+                        <p>Likely   <input type="radio" onclick="Blue(4)" name="radAnswer19"  />
+                        <input type="radio" onclick="Blue(3)" name="radAnswer19"  />
+                        <input type="radio" onclick="Blue(2)" name="radAnswer19"  /> 
+                        <input type="radio" onclick="Blue(1)" name="radAnswer19" />  Unlikely</p>
+                    
+                    <h2>d. Organizing.</h2>
+                        <p>Likely   <input type="radio" onclick="Gold(4)" name="radAnswer20"  />
+                        <input type="radio" onclick="Gold(3)" name="radAnswer20"  />
+                        <input type="radio" onclick="Gold(2)" name="radAnswer20"  /> 
+                        <input type="radio" onclick="Gold(1)" name="radAnswer20" />  Unlikely</p>
+                </p>
+                <br></br>
+            </fieldset>
+            <br></br>
+            <fieldset>
+                <h1>6. Friends who know me best would say that I am:</h1>
+                <p>
+                    <h2>a. Competitive.</h2>
+                        <p>Likely   <input type="radio" onclick="Orange(4)" name="radAnswer21"  />
+                        <input type="radio" onclick="Orange(3)" name="radAnswer21"  />
+                        <input type="radio" onclick="Orange(2)" name="radAnswer21"  /> 
+                        <input type="radio" onclick="Orange(1)" name="radAnswer21" />  Unlikely</p>
+                
+                    <h2>b. Reserved, thoughtful.</h2>
+                        <p>Likely   <input type="radio" onclick="Green(4)" name="radAnswer22"  />
+                        <input type="radio" onclick="Green(3)" name="radAnswer22"  />
+                        <input type="radio" onclick="Green(2)" name="radAnswer22"  /> 
+                        <input type="radio" onclick="Green(1)" name="radAnswer22" />  Unlikely</p>
+                
+                    <h2>c. Emotional, friendly.</h2>
+                        <p>Likely   <input type="radio" onclick="Blue(4)" name="radAnswer23"  />
+                        <input type="radio" onclick="Blue(3)" name="radAnswer23"  />
+                        <input type="radio" onclick="Blue(2)" name="radAnswer23"  /> 
+                        <input type="radio" onclick="Blue(1)" name="radAnswer23" />  Unlikely</p>
+                    
+                    <h2>d. Neat, prepared.</h2>
+                        <p>Likely   <input type="radio" onclick="Gold(4)" name="radAnswer24"  />
+                        <input type="radio" onclick="Gold(3)" name="radAnswer24"  />
+                        <input type="radio" onclick="Gold(2)" name="radAnswer24"  /> 
+                        <input type="radio" onclick="Gold(1)" name="radAnswer24" />  Unlikely</p>
+                </p>
+                <br></br>
+            </fieldset>
+            <br></br>
+            <fieldset>
+                <h1>7. My basic approach to life is:</h1>
+                <p>
+                    <h2>a. To take one day at a time and have fun.</h2>
+                        <p>Likely   <input type="radio" onclick="Orange(4)" name="radAnswer25"  />
+                        <input type="radio" onclick="Orange(3)" name="radAnswer25"  />
+                        <input type="radio" onclick="Orange(2)" name="radAnswer25"  /> 
+                        <input type="radio" onclick="Orange(1)" name="radAnswer25" />  Unlikely</p>
+                
+                    <h2>b. To figure out what life is all about.</h2>
+                        <p>Likely   <input type="radio" onclick="Green(4)" name="radAnswer26"  />
+                        <input type="radio" onclick="Green(3)" name="radAnswer26"  />
+                        <input type="radio" onclick="Green(2)" name="radAnswer26"  /> 
+                        <input type="radio" onclick="Green(1)" name="radAnswer26" />  Unlikely</p>
+                
+                    <h2>c. To help others and be happy and succeed.</h2>
+                        <p>Likely   <input type="radio" onclick="Blue(4)" name="radAnswer27"  />
+                        <input type="radio" onclick="Blue(3)" name="radAnswer27"  />
+                        <input type="radio" onclick="Blue(2)" name="radAnswer27"  /> 
+                        <input type="radio" onclick="Blue(1)" name="radAnswer27" />  Unlikely</p>
+                    
+                    <h2>d. To plan for the future and make it as good as possible.</h2>
+                        <p>Likely   <input type="radio" onclick="Gold(4)" name="radAnswer28"  />
+                        <input type="radio" onclick="Gold(3)" name="radAnswer28"  />
+                        <input type="radio" onclick="Gold(2)" name="radAnswer28"  /> 
+                        <input type="radio" onclick="Gold(1)" name="radAnswer28" />  Unlikely</p>
+                </p>
+                <br></br>
+            </fieldset>
+            <br></br>
+            <fieldset>
+                <h1>8. When I am feeling discouraged or “down in the dumps”:</h1>
+                <p>
+                    <h2>a. I often become rude, mad, or sometimes even mean.</h2>
+                        <p>Likely   <input type="radio" onclick="Orange(4)" name="radAnswer29"  />
+                        <input type="radio" onclick="Orange(3)" name="radAnswer29"  />
+                        <input type="radio" onclick="Orange(2)" name="radAnswer29"  /> 
+                        <input type="radio" onclick="Orange(1)" name="radAnswer29" />  Unlikely</p>
+                
+                    <h2>b. I withdraw, don't talk very much, and try to think my way out of the problem.</h2>
+                        <p>Likely   <input type="radio" onclick="Green(4)" name="radAnswer30"  />
+                        <input type="radio" onclick="Green(3)" name="radAnswer30"  />
+                        <input type="radio" onclick="Green(2)" name="radAnswer30"  /> 
+                        <input type="radio" onclick="Green(1)" name="radAnswer30" />  Unlikely</p>
+                
+                    <h2>c. I feel emotional, am sad, and usually like to talk it over with someone close to me.</h2>
+                        <p>Likely   <input type="radio" onclick="Blue(4)" name="radAnswer31"  />
+                        <input type="radio" onclick="Blue(3)" name="radAnswer31"  />
+                        <input type="radio" onclick="Blue(2)" name="radAnswer31"  /> 
+                        <input type="radio" onclick="Blue(1)" name="radAnswer31" />  Unlikely</p>
+                    
+                    <h2>d. I try to figure out what's causing the problem and fix it.</h2>
+                        <p>Likely   <input type="radio" onclick="Gold(4)" name="radAnswer32"  />
+                        <input type="radio" onclick="Gold(3)" name="radAnswer32"  />
+                        <input type="radio" onclick="Gold(2)" name="radAnswer32"  /> 
+                        <input type="radio" onclick="Gold(1)" name="radAnswer32" />  Unlikely</p>
+                </p>
+                <br></br>
+            </fieldset>
+            <br></br>
+            <fieldset>
+                <h1>9. I feel good about myself when:</h1>
+                <p>
+                    <h2>a. I can do things that are difficult.</h2>
+                        <p>Likely   <input type="radio" onclick="Orange(4)" name="radAnswer33"  />
+                        <input type="radio" onclick="Orange(3)" name="radAnswer33"  />
+                        <input type="radio" onclick="Orange(2)" name="radAnswer33"  /> 
+                        <input type="radio" onclick="Orange(1)"  name="radAnswer33" />  Unlikely</p>
+                
+                    <h2>b. I can solve problems or figure things out.</h2>
+                        <p>Likely   <input type="radio" onclick="Green(4)" name="radAnswer34"  />
+                        <input type="radio" onclick="Green(3)" name="radAnswer34"  />
+                        <input type="radio" onclick="Green(2)" name="radAnswer34"  /> 
+                        <input type="radio" onclick="Green(1)"  name="radAnswer34"  />  Unlikely</p>
+                
+                    <h2>c. I can help other people.</h2>
+                        <p>Likely   <input type="radio" onclick="Blue(4)" name="radAnswer35"  />
+                        <input type="radio" onclick="Blue(3)" name="radAnswer35"  />
+                        <input type="radio" onclick="Blue(2)" name="radAnswer35"  /> 
+                        <input type="radio" onclick="Blue(1)"  name="radAnswer35" />  Unlikely</p>
+                    
+                    <h2>d. I am appreciated or rewarded for things I do.</h2>
+                        <p>Likely   <input type="radio" onclick="Gold(4)" name="radAnswer36"  />
+                        <input type="radio" onclick="Gold(3)" name="radAnswer36"  />
+                        <input type="radio" onclick="Gold(2)" name="radAnswer36"  /> 
+                        <input type="radio" onclick="Gold(1)"  name="radAnswer36" />  Unlikely</p>
+                </p>
+                <br></br>
+            </fieldset>
+            <br></br>
+            <fieldset>
+                <h1>10. Teachers at school who saw me when I wasn't on my best behavior might describe me as:</h1>
+                <p>
+                    <h2>a. Rowdy or a little wild.</h2>
+                        <p>Likely   <input type="radio" onclick="Orange(4)" name="radAnswer37"  />
+                        <input type="radio" onclick="Orange(3)"  name="radAnswer37"  />
+                        <input type="radio" onclick="Orange(2)" name="radAnswer37"  /> 
+                        <input type="radio" onclick="Orange(1)" name="radAnswer37" />  Unlikely</p>
+                
+                    <h2>b. Arrogant.</h2>
+                        <p>Likely   <input type="radio" onclick="Green(4)" name="radAnswer38"  />
+                        <input type="radio" onclick="Green(3)"  name="radAnswer38"  />
+                        <input type="radio" onclick="Green(2)" name="radAnswer38"  /> 
+                        <input type="radio" onclick="Green(1)" name="radAnswer38" />  Unlikely</p>
+                
+                    <h2>c. Talkative.</h2>
+                        <p>Likely   <input type="radio" onclick="Blue(4)" name="radAnswer39"  />
+                        <input type="radio" onclick="Blue(3)"  name="radAnswer39"  />
+                        <input type="radio" onclick="Blue(2)" name="radAnswer39"  /> 
+                        <input type="radio" onclick="Blue(1)" name="radAnswer39" />  Unlikely</p>
+                    
+                    <h2>d. Someone who wants things my way; dominant; worrying.</h2>
+                        <p>Likely   <input type="radio" onclick="Gold(4)" name="radAnswer40"  />
+                        <input type="radio" onclick="Gold(3)"  name="radAnswer40"  />
+                        <input type="radio" onclick="Gold(2)" name="radAnswer40"  /> 
+                        <input type="radio" onclick="Gold(1)" name="radAnswer40" />  Unlikely</p>
+                </p>
+                <br></br>
+            </fieldset>
+            <br></br>
+            <fieldset>
+                <h1>11. Teachers at school (who like me and in whose class I do pretty well) would probably describe me as:</h1>
+                <p>
+                    <h2>a. Charming, a natural leader, clever, someone who is fun to have around.</h2>
+                        <p>Likely   <input type="radio" onclick="Orange(4)" name="radAnswer41"  />
+                        <input type="radio" onclick="Orange(3)" name="radAnswer41"  />
+                        <input type="radio" onclick="Orange(2)" name="radAnswer41"  /> 
+                        <input type="radio" onclick="Orange(1)" name="radAnswer41" />  Unlikely</p>
+            
+                    <h2>b. Thoughtful, someone who has good answers, someone who likes to figure out problems.</h2>
+                        <p>Likely   <input type="radio" onclick="Green(4)" name="radAnswer42"  />
+                        <input type="radio" onclick="Green(3)" name="radAnswer42"  />
+                        <input type="radio" onclick="Green(2)" name="radAnswer42"  /> 
+                        <input type="radio" onclick="Green(1)" name="radAnswer42" />  Unlikely</p>
+                
+                    <h2>c. Nice, friendly, someone who gets along with other students and is helpful to the teacher and others.</h2>
+                        <p>Likely   <input type="radio" onclick="Blue(4)" name="radAnswer43"  />
+                        <input type="radio" onclick="Blue(3)" name="radAnswer43"  />
+                        <input type="radio" onclick="Blue(2)" name="radAnswer43"  /> 
+                        <input type="radio" onclick="Blue(1)" name="radAnswer43" />  Unlikely</p>
+                    
+                    <h2>d. Neat, organized, prepared, someone who does assignments and is a good student.</h2>
+                       <p>Likely    <input type="radio" onclick="Gold(4)" name="radAnswer44"  />
+                        <input type="radio" onclick="Gold(3)" name="radAnswer44"  />
+                        <input type="radio" onclick="Gold(2)" name="radAnswer44"  /> 
+                        <input type="radio" onclick="Gold(1)" name="radAnswer44" />  Unlikely</p> 
+                </p>
+                <br></br>
+            </fieldset>
+            <br></br>
+            
+            <input type="submit" class="main__btn" onclick = "Result()" id="submit" value="Get your result"/>
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>

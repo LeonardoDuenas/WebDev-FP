@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chroma: Personality Test</title>
+        <link rel="stylesheet" href="css/style.css" />
+       
+        <link
+          href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+          <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>CHROMA PERSONALITY</a>
+            <div class="navbar__toggle" id="mobile-menu">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+              <li class="navbar__btn">
+                <a href="/" class="button">Home</a>
+            </li>
+              <li class="navbar__item">
+                <a onclick="colors()" class="navbar__links"></a>
+              </li>
+              <li class="navbar__btn">
+                <a href="colors.html" class="button">The Colors</a>
+            </li>
+              <li class="navbar__btn">
+                <a href="Blue.html" class="button">blue</a>
+            </li>
+              <li class="navbar__btn">
+                <a href="Green.html" class="button">green</a>
+            </li>
+              <li class="navbar__btn">
+                <a href="Gold.html" class="button">gold</a>
+            </li>
+              <li class="navbar__btn">
+                <a href="Orange.html" class="button">orange</a>
+            </li>
+            </ul>
+          </div>
+        </nav>
+
+      <!-- Hero Section -->
+    <div class="main">
+        <div class="main__container">
+          <div class="main__content">
+            <h1>The Side Of Colors</h1>
+            <h2>Learn About your Personality through Colors</h2>
+            <p>The Color of Who you are.</p>
+            <button class="main__btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href="">Get Started</a></button>
+          </div>
+          <div id="id01" style="display: none;" class="modal">
+  
+            <form class="modal-content" action="/Colors.html" >
+              <fieldset>
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close form">&times;</span>
+                <img src="img/avatar.jpg" alt="Avatar" class="avatar">
+              </div>
+
+             
+              <legend>Login For your test</legend>
+                <div class="main__login--container">
+                  
+                  <div > 
+                    <label class="user" for="username">Username:</label>
+                  <input type="text" id="username" name="username" required><br>
+                  </div>
+                  
+                  <div>
+                    <label class="word" for="password">Password:</label>
+                  <input type="password" id="password" name="password" required><br>
+                  </div>
+                  <div>
+                    <button class="main__btn" id="login__btn" onclick="validate()" type="submit">Login</button>
+                    <button type="button" id="cancel"onclick="document.getElementById('id01').style.display='none'" class="main__btn">Cancel</button>
+                  </div>
+            
+                  <div class="container" style="background-color:#f1f1f1">
+                    
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+
+	
+    
+	<div id="test" style="display: none;">
+		<h2>Questionnaire</h2>
+		<form onsubmit="return submitAnswers()">
+			
+			<button type="submit">Submit</button>
+		</form>
+	
+      <script src="script.js"></script>
+	
+</body>
+</html>
