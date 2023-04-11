@@ -5,6 +5,7 @@ let orange = 0;
 let highest = 0;
 let highest2 = 0;
 
+
 function Gold (value)
     {
         if (value == 4)
@@ -23,6 +24,8 @@ function Gold (value)
         {
             gold += 1;
         }
+
+
     }
 
     function Blue (value)
@@ -43,6 +46,9 @@ function Gold (value)
         {
             blue += 1;
         }
+
+      
+     
     }
     
     function Green (value)
@@ -63,7 +69,12 @@ function Gold (value)
         {
             green += 1;
         }
+
+       
+      
+     
     }
+
 
     function Orange (value)
     {
@@ -83,30 +94,33 @@ function Gold (value)
         {
             orange += 1;
         }
+
+
+       
+      
     }
     
 
-function Result ()
-
+function Result (sheet1, sheet2)
 {
-    window.open("result.html");
-    
-    
-      
+  document.getElementById('questionnaire').setAttribute('href', sheet1);
+  document.getElementById('main').setAttribute('href', sheet2);
+  var div = document.getElementById('form');
+  var div2 = document.getElementById('result_container');
+  
+    div.style.display = 'none';
 
-     if (gold < highest && gold > highest2) {
-        highest2 = gold;
-      }
+  
+    div2.style.display = 'block';
 
-     if (blue < highest && blue > highest2) {
-        highest2 = blue;
-      }
-     if (green < highest && green > highest2) {
-        highest2 = green;
-      }
-     if (orange < highest && orange > highest2) {
-        highest2 = orange;
-      }
+  
+
+  window.sessionStorage.setItem('orange', orange.toString());
+      window.sessionStorage.setItem('green', green.toString());
+      window.sessionStorage.setItem('blue', blue.toString());
+      window.sessionStorage.setItem('gold', gold.toString());
+   
+    
 
       if (gold > highest) {
         highest = gold;
@@ -124,53 +138,76 @@ function Result ()
         highest = orange;
       }
       // Call the function with the highest value
-  
+      if (gold < highest && gold > highest2) {
+        highest2 = gold;
+      }
+
+     if (blue < highest && blue > highest2) {
+        highest2 = blue;
+      }
+     if (green < highest && green > highest2) {
+        highest2 = green;
+      }
+     if (orange < highest && orange > highest2) {
+        highest2 = orange;
+      }
+      
+      
+      // Retrieve the number from localStorage
+    
+      
+
 }
 
    
-function highestcolor(value)
+function highestcolor()
 {  
- if(value == gold)
- {
-  window.location.href ='Gold.html';
-   
- }
- 
-else if(value == blue)
- {
-  window.location.href ='Blue.html';
- }
-else if(value == green)
- {
-  window.location.href ='Green.html';
- }
-else if (value == orange)
- {
-  window.location.href ='Orange.html';
- }
+  
+  if(highest == gold)
+  {
+    window.location.href ='Gold.html';
+  }
+  else if(highest == blue)
+  {
+    window.location.href ='Blue.html';
+  }
+  else if(highest == green)
+  {
+    window.location.href ='Green.html';
+  }
+  else if(highest == orange)
+  {
+    window.location.href ='Orange.html';
+  }
    }
 
-  function sechighest(value)
+  function sechighest()
 {
-if(value == gold)
-{
-  window.location.href ='Gold.html';
+    if(highest2 == gold)
+    {
+      window.location.href ='Gold.html';
+    }
+    else if(highest2 == blue)
+    {
+      window.location.href ='Blue.html';
+    }
+    else if(highest2 == green)
+    {
+      window.location.href ='Green.html';
+    }
+    else if(highest2 == orange)
+    {
+      window.location.href ='Orange.html';
+    }
 }
+ 
+ 
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
 
-else if(value == blue)
-{
-  window.location.href ='Blue.html';
-}
-else if(value == green)
-{
-  window.location.href ='Green.html';
-}
-else if(value == orange)
-{
-  window.location.href ='Orange.html';
-}
-}
- 
- 
+menu.addEventListener('click', function() {
+  menu.classList.toggle('is-active');
+  menuLinks.classList.toggle('active');
+});
  
  
