@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Chroma: Personality Test</title>
         <link rel="stylesheet" href="css/style.css" />
-       
+        <link rel="shortcut icon" type="image/png" href="img/blue.jpeg">
         <link
           href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
           rel="stylesheet"
@@ -31,18 +31,6 @@
               <li class="navbar__btn">
                 <a href="colors.html" class="button">The Colors</a>
             </li>
-              <li class="navbar__btn">
-                <a href="Blue.html" class="button">blue</a>
-            </li>
-              <li class="navbar__btn">
-                <a href="Green.html" class="button">green</a>
-            </li>
-              <li class="navbar__btn">
-                <a href="Gold.html" class="button">gold</a>
-            </li>
-              <li class="navbar__btn">
-                <a href="Orange.html" class="button">orange</a>
-            </li>
             </ul>
           </div>
         </nav>
@@ -56,7 +44,7 @@
             <p>The Color of Who you are.</p>
             <button class="main__btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href="">Get Started</a></button>
           </div>
-          <div id="id01" style="display: none;" class="modal">
+          <div id="id01"  class="modal">
   
             <form class="modal-content" action="/Colors.html" >
               <fieldset>
@@ -91,17 +79,12 @@
               </fieldset>
             </form>
           </div>
+          <div class="main__img--container">
+            <img id="main__img" src="img/butterfly-g050c5ac56_1920-removebg-preview.png" />
+          </div>
+
         </div>
       </div>
-
-	
-    
-	<div id="test" style="display: none;">
-		<h2>Questionnaire</h2>
-		<form onsubmit="return submitAnswers()">
-			
-			<button type="submit">Submit</button>
-		</form>
 	
       <script src="script.js"></script>
 	
