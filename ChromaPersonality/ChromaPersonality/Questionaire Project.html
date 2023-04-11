@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Project Style.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link id="questionnaire" rel="stylesheet" href="css/Project Style.css">
+    <link id="main" rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/blue.jpeg">
+    
+    
     <title>Chroma Personality</title>
     <script src ="Java.js"></script>
 </head>
@@ -27,8 +30,8 @@
           </ul>
         </div>
       </nav>
-    <div class="form container">
-        <form >
+    <div class="form container" id="form-container">
+        <form action="result.html" id="form">
         <fieldset>
             <legend><b>Exploring your colors!</b></legend>
                 <h1>1. When I make decisions:</h1>
@@ -361,9 +364,37 @@
             </fieldset>
             <br></br>
             
-            <input type="submit" class="main__btn" onclick = "Result()" id="submit" value="Get your result"/>
+            <input type="submit" class="main__btn" onclick = "Result('css/styleinfo.css','css/resultstyle.css')" id="submit" value="Get your result"/>
         </fieldset>
         </form>
     </div>
+    <div class="container" style="display: none;" id="result_container">
+        <div class="main-title">
+            <!--<h1>What</h1>
+            <h1>does</h1>
+            <h1>each</h1> 
+            <h1>color</h1> 
+            <h1>mean?</h1>-->
+            <p>YOU</p> <p>ARE</p> <p>THE</p> <p>COLOR</p> <p>...</p>
+        </div>
+        
+        
+        
+
+        <button onclick="highestcolor()" class="neon-button">Your First Color</button>
+        <div>
+            <br><br>
+            <br><br>
+            <br><br>
+        </div>
+        <button onclick="sechighest()" class="neon-button">Second Color</button>
+
+            <div>
+                <br><br>
+                <br><br>
+                <br><br>
+            </div>
+            
+    </div>   
 </body>
 </html>
