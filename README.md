@@ -1,12 +1,10 @@
 # WebDev-FP
 
-Personality Test Web Page
-
-Overview
+**Overview**
 
 This project is a simple web-based personality test that categorizes users into one of four colors based on their answers to a set of questions. The test provides insight into personality traits associated with each color category.
 
-Technologies Used
+**Technologies Used**
 
 HTML: Structure of the web page
 
@@ -14,7 +12,7 @@ CSS: Styling and layout
 
 JavaScript: Interactive elements and logic for personality calculation
 
-Features
+**Features**
 
 A series of multiple-choice questions
 
