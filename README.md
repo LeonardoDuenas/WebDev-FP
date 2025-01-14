@@ -6,18 +6,18 @@ This project is a simple web-based personality test that categorizes users into 
 
 **Technologies Used**
 
-HTML: Structure of the web page
++ HTML: Structure of the web page
 
-CSS: Styling and layout
++ CSS: Styling and layout
 
-JavaScript: Interactive elements and logic for personality calculation
++ JavaScript: Interactive elements and logic for personality calculation
 
 **Features**
 
-A series of multiple-choice questions
++ A series of multiple-choice questions
 
-Real-time response tracking
++ Real-time response tracking
 
-Final result displaying the personality color
++ Final result displaying the personality color
 
-Responsive design for mobile and desktop users
++ Responsive design for mobile and desktop users
